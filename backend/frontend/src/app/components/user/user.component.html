@@ -1,0 +1,12 @@
+<!-- filepath: frontend/src/app/components/user/user.component.html -->
+<h1>User List</h1>
+<form (submit)="addUser(); $event.preventDefault()">
+  <input [(ngModel)]="name" placeholder="Name" required />
+  <input [(ngModel)]="email" placeholder="Email" required />
+  <button type="submit">Add User</button>
+</form>
+<ul>
+  <li *ngFor="let user of users">
+    {{ user.name }} ({{ user.email }})
+  </li>
+</ul>
