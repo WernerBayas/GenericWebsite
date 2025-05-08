@@ -15,6 +15,7 @@
     flex-grow: 1; /* Allow the title to take up available space */
     text-align: center; /* Center the title horizontally */
     margin: 0;
+    
   }
   
   /* Button Styling */
@@ -182,3 +183,4 @@
     text-align: center;
     padding: 10px 0;
   }
+

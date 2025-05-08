@@ -5,7 +5,7 @@
         <button class="menu-toggle-button" (click)="toggleMenu()">☰</button>
       </div>
       <div class="header-title">
-        <h1>Matcher</h1>
+        <h1 class="matcher">Matcher</h1>
       </div>
       <div class="header-button">
         <a routerLink="/login" class="login-button">Login</a>
@@ -18,11 +18,11 @@
   
   <aside class="menu" [class.hidden]="!isMenuVisible">
     <ul>
-      <li><a routerLink="/user">Who Are We</a></li>
-      <li><a href="#">Why Matcher</a></li>
-      <li><a href="#">Memberships</a></li>
-      <li><a href="#">Success Stories</a></li>
-      <li><a href="#">Contact Us</a></li>
+      <li><a routerLink="/home">Who Are We</a></li>
+      <li><a routerLink="/why">Why Matcher</a></li>
+      <li><a routerLink="/memberships">Memberships</a></li>
+      <li><a routerLink="/stories">Success Stories</a></li>
+      <li><a routerLink="/contact">Contact Us</a></li>
     </ul>
   </aside>
 

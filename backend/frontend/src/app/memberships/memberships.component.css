@@ -1,0 +1,149 @@
+.membership-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; /* Allow wrapping of items */
+  }
+
+  
+  
+  .membership-plan {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .membership-plan:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .membership-header {
+    margin-bottom: 10px;
+  }
+  
+  .membership-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .emoji-section {
+    flex: 1; /* 1/3 of the width */
+    text-align: center;
+  }
+  
+  .emoji-section .emoji {
+    font-size: 80px;
+  }
+  
+  .info-section {
+    flex: 2; /* 2/3 of the width */
+    text-align: left;
+  }
+  
+  .info-section p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e65b50;
+    margin-bottom: 10px;
+  }
+  
+  .info-section ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  
+  .info-section ul li {
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .info-section button {
+    background-color: #e65b50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .info-section button:hover {
+    background-color: #d94a3f;
+  }
+  
+  /* Responsive Design: Stack bubbles vertically on smaller screens */
+  @media (max-width: 768px) {
+    .membership-container {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
+    }
+  
+    .membership-plan {
+      width: 90%; /* Adjust width to fit the screen */
+      margin-bottom: 20px; /* Add spacing between stacked items */
+    }
+  
+    .membership-content {
+      flex-direction: column; /* Stack emoji and info vertically */
+      text-align: center;
+    }
+  
+    .emoji-section {
+      margin-bottom: 10px;
+    }
+  
+    .info-section {
+      text-align: center;
+    }
+  }
+
+  /* Animation for the title */
+.animated-title {
+  font-family: 'Poppins', sans-serif; /* Modern and clean font */
+  font-size: 3rem; /* Slightly larger font size */
+  font-weight: 700; /* Bold for emphasis */
+  text-align: center;
+  color: #333; /* Darker color for better contrast */
+  animation: fadeIn 3s ease-in-out, slideIn 2s ease-in-out;
+  margin-bottom: 10px;
+  }
+  
+  /* Animation for the subtitle */
+  .animated-subtitle {
+    font-family: 'Poppins', sans-serif; /* Consistent font with the title */
+  font-size: 1.2rem; /* Slightly larger font size */
+  font-weight: 300; /* Regular weight for readability */
+  text-align: center;
+  color: #666; /* Softer color for a subtle look */
+  animation: fadeIn 3s ease-in-out;
+  margin-bottom: 20px;
+  }
+  
+  /* Keyframes for fade-in effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Keyframes for slide-in effect */
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }

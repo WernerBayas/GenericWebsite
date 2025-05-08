@@ -9,6 +9,10 @@
         <label for="password">Password:</label>
         <input type="password" id="password" placeholder="Enter your password" required />
       </div>
-      <button type="submit" class="login-button">Log In</button>
+      <div class = "login-button-container">
+        <button routerLink="/userDashboard"  class="login-button">Log In</button>
+        <button routerLink="/forgotPassword" class="login-button">Forgot password</button>
+        <button routerLink="/createAccount" class="login-button">Create Account</button>
+      </div>
     </form>
   </div>
