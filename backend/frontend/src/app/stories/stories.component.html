@@ -1,1 +1,54 @@
-<p>stories works!</p>
+<div class="page-container">
+    <h1 class="animated-title">Our Love Stories</h1>
+    <div class="story-container">
+        <div class="story-card">
+            <h2>From Strangers to Soulmates 💕</h2>
+            <p class="author">By: Emma & Liam</p>
+            <p class="preview">
+              We met on a rainy Sunday afternoon at a coffee shop, both lost in our books. Little did we know, that day would mark the beginning of forever.
+            </p>
+            <a href="#" class="read-more">Read Full Story →</a>
+          </div>
+        
+        <!-- Story 2 -->
+        <div class="story-card">
+            <h2>The Unexpected Proposal 💍</h2>
+            <p class="author">By: Alex & Jordan</p>
+            <p class="preview">
+              After three years of adventures, Alex took me to our favorite beach for what I thought was just another sunset walk. But that day, everything changed.
+            </p>
+            <a href="#" class="read-more">Read Full Story →</a>
+          </div>
+        
+        <!-- Story 3 -->
+        <div class="story-card">
+            <h2>Across the Miles 🌍</h2>
+            <p class="author">By: Priya & Sam</p>
+            <p class="preview">
+              Our relationship blossomed from a long-distance friendship. What started as late-night conversations grew into a love that surpassed any distance.
+            </p>
+            <a href="#" class="read-more">Read Full Story →</a>
+          </div>
+      </div>
+  
+    <!-- Add Story Button -->
+    <div class="add-story-button-container">
+      <button class="openModalBtn" (click)="OpenAddStory()">Add a Story</button>
+    </div>
+  
+    <!-- Modal -->
+    <div class="modal" [class.hidden]="!isStoryPopUpVisible">
+      <div class="modal-content">
+        <span class="close" (click)="closeModal()">&times;</span>
+        <h2>Share Your Love Story ❤️</h2>
+        <form class="story-form" action="#" method="POST">
+          <input type="text" name="names" placeholder="Your Names (optional)" />
+          <input type="text" name="title" placeholder="Story Title" required />
+          <textarea name="story" placeholder="Tell us your love story..." required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  
+  </div>
+  
